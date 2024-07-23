@@ -313,6 +313,7 @@ button:hover{
 
 @media only screen and (max-width: 900px) {
     nav ul {
+        display: none;
         position: absolute;
         background: rgba(257, 257, 257, 0.2);
         backdrop-filter: blur(10px);
@@ -325,17 +326,14 @@ button:hover{
         transform: translateY(-20px); /* Move up a bit */
         transition: opacity 0.3s ease, transform 0.3s ease; /* Transition properties */
     }
-
-    nav ul.show { /* Add this class to show the menu */
-        opacity: 1;
-        transform: translateY(0); /* Move back to original position */
-    }
-
     nav ul li {
-        display: block;
         margin: 10px;
         display: flex;
         justify-content: center;
+    }
+    nav ul.show { /* Add this class to show the menu */
+        opacity: 1;
+        transform: translateY(0); /* Move back to original position */
     }
 
     .menubar {
