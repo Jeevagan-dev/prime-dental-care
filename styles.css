@@ -281,7 +281,7 @@ button:hover{
         display: block;
         transition: all 5s;
     }
-} */
+}.. */
 @media only screen and (max-width: 800px) {
 .content{
     flex-direction: column;
